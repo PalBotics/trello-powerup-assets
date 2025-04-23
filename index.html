@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSV Importer</title>
+  <script src="https://p.trellocdn.com/power-up.min.js"></script>
+  <script>
+    window.TrelloPowerUp.initialize({
+      'board-buttons': function(t, options) {
+        return [{
+          text: 'Import CSV',
+          callback: function(t) {
+            return t.popup({
+              title: 'CSV Importer',
+              url: './popup.html',
+              height: 200
+            });
+          }
+        }];
+      }
+    });
+  </script>
+</head>
+<body>
+  <h1>CSV Importer</h1>
+</body>
+</html>

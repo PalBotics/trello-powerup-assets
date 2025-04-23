@@ -1,0 +1,23 @@
+{
+    "name": "CSV Importer",
+    "description": "Import cards and lists into Trello from a CSV file.",
+    "icon": "https://cdn.jsdelivr.net/gh/PalBotics/trello-powerup-assets@main/CSV-importer-icon.png",
+    "permissions": {
+      "board": "read",
+      "write": true
+    },
+    "capabilities": [
+      "card-buttons",
+      "board-buttons"
+    ],
+    "board-buttons": [
+      {
+        "text": "Import CSV",
+        "callback": "showImportPopup"
+      }
+    ],
+    "card-buttons": [],
+    "author": "PalBotics",
+    "version": "1.0"
+  }
+  
