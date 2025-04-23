@@ -13,9 +13,9 @@
     "write": true
   },
   "capabilities": [
-    "board-buttons"
+    "card-buttons"
   ],
-  "board-buttons": [
+  "card-buttons": [
     {
       "text": "Import CSV",
       "callback": "showImportPopup"
