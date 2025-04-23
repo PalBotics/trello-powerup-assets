@@ -7,7 +7,6 @@
       "write": true
     },
     "capabilities": [
-      "card-buttons",
       "board-buttons"
     ],
     "board-buttons": [
@@ -16,8 +15,6 @@
         "callback": "showImportPopup"
       }
     ],
-    "card-buttons": [],
     "author": "PalBotics",
     "version": "1.0"
   }
-  
