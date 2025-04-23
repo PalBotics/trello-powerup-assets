@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CSV Importer Power-Up Files</title>
+  <title>CSV Importer Power-Up</title>
+  <script src="https://p.trellocdn.com/power-up.min.js"></script>
+  <script src="client.js" defer></script>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -37,7 +39,6 @@
       text-decoration: underline;
     }
   </style>
-  <script src="https://p.trellocdn.com/power-up.min.js"></script>
 </head>
 <body>
   <h1>CSV Importer Power-Up Files</h1>
@@ -45,27 +46,7 @@
     <li><a href="capabilities.json">capabilities.json</a></li>
     <li><a href="popup.html">popup.html</a></li>
     <li><a href="CSV-importer-icon.png">CSV-importer-icon.png</a></li>
+    <li><a href="client.js">client.js</a></li>
   </ul>
-
-  <script>
-    const t = TrelloPowerUp.iframe();
-
-    window.TrelloPowerUp.initialize({
-      'board-buttons': function(t, options) {
-        return [{
-          text: 'Import CSV',
-          callback: showImportPopup
-        }];
-      }
-    });
-
-    function showImportPopup(t, options) {
-      return t.popup({
-        title: 'Import from CSV',
-        url: 'popup.html',
-        height: 220
-      });
-    }
-  </script>
 </body>
 </html>
