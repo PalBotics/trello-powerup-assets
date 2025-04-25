@@ -1,6 +1,6 @@
 {
-  "name": "CSV Debug Power-Up",
-  "description": "Debug Trello Power-Up with test card button.",
+  "name": "CSV Importer",
+  "description": "Import cards and lists into Trello from a CSV file.",
   "icon": "https://palbotics.github.io/trello-powerup-assets/CSV-importer-icon.png",
   "app": {
     "url": "https://palbotics.github.io/trello-powerup-assets/client.js"
@@ -13,7 +13,8 @@
     "write": true
   },
   "capabilities": [
-    "card-buttons"
+    "card-buttons",
+    "show-settings"
   ],
   "card-buttons": [
     {
