@@ -1,16 +1,18 @@
+console.log("Trello Power-Up: client.js loaded");
+
 window.TrelloPowerUp.initialize({
-  'board-buttons': function(t, options) {
+  'card-buttons': function(t, options) {
+    console.log("Trello Power-Up: initializing card button");
     return [{
-      text: 'Import CSV',
-      callback: showImportPopup
+      text: 'Test CSV Button',
+      callback: function(t) {
+        console.log("Trello Power-Up: button clicked");
+        return t.popup({
+          title: 'Hello from CSV',
+          url: 'popup.html',
+          height: 180
+        });
+      }
     }];
   }
 });
-
-function showImportPopup(t, options) {
-  return t.popup({
-    title: 'Import from CSV',
-    url: 'popup.html',
-    height: 220
-  });
-}
