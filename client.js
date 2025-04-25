@@ -14,5 +14,14 @@ window.TrelloPowerUp.initialize({
         });
       }
     }];
+  },
+
+  'show-settings': function(t, options) {
+    console.log("Trello Power-Up: opening settings");
+    return t.popup({
+      title: 'CSV Importer Settings',
+      url: 'popup.html',
+      height: 200
+    });
   }
 });
